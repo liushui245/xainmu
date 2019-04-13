@@ -1,0 +1,1 @@
+"use strict";var Cookie={setCookie:function(e,o,t,i){var n=e+"="+o;t&&(n+="; expires="+t.toUTCString()),i&&(n+="; path="+i),document.cookie=n},getCookie:function(t){var e=document.cookie.split("; "),i="";return e.forEach(function(e){var o=e.split("=");o[0]==t&&(i=o[1])}),i},removeCookie:function(e,o){var t=new Date;t.setDate(t.getDate()-1),this.setCookie(e,"",t,o)}};

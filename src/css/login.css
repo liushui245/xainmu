@@ -1,0 +1,544 @@
+@charset "UTF-8";
+html {
+  font-family: Arial, Helvetica, sans-serif,"宋体";
+  background-color: #FAFAFA;
+}
+
+header {
+  height: 88px;
+  background-color: #FFF;
+}
+
+header h1 {
+  width: 250px;
+  padding-top: 15px;
+  float: left;
+}
+
+header h1 a {
+  float: left;
+  height: 88px;
+  width: 135px;
+  text-indent: -9999em;
+  background: url("../img/register/left.jpg") no-repeat;
+}
+
+header h1 span {
+  float: left;
+  width: 112px;
+  height: 88px;
+  background: url("../img/register/slogan.jpg") no-repeat;
+}
+
+header .header-r {
+  float: right;
+  width: 290px;
+  padding-top: 48px;
+  font-size: 12px;
+}
+
+header .header-r .r-a1 {
+  color: #999999;
+}
+
+header .header-r .r-a2 {
+  padding: 0 15px;
+  color: blue;
+}
+
+header .header-r .r-a2:hover {
+  text-decoration: underline;
+}
+
+header .header-r .r-a3 {
+  cursor: pointer;
+  position: relative;
+  padding: 5px 5px;
+  border: 1px solid #FFF;
+}
+
+header .header-r .r-a3::after {
+  content: '';
+  background: url("../img/register/regLogin-8.png") no-repeat;
+  background-position: -23px 0;
+  width: 15px;
+  height: 14px;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+header .header-r .r-a3:hover {
+  border: 1px solid #CCC;
+  border-bottom: none;
+}
+
+header .header-r .r-a3:hover .r-a3-d {
+  display: block;
+}
+
+header .header-r .r-a3 .r-a3-d {
+  width: 83px;
+  display: none;
+  position: absolute;
+  background-color: #FFF;
+  border: 1px solid #CCC;
+  left: -58px;
+  border-top: none;
+}
+
+header .header-r .r-a3 .r-a3-d a {
+  display: block;
+  border-top: 1px dashed #CCC;
+  padding: 8px 5px;
+}
+
+header .header-r .r-a3 .r-a3-d a:hover {
+  text-decoration: underline;
+}
+
+/*main区域*/
+.main {
+  width: 100%;
+  background: url("../img/register/52e02a1c4948477da463dcf88915ad87.jpg") no-repeat;
+  height: 600px;
+  padding-top: 100px;
+}
+
+.main .login-zhu {
+  width: 350px;
+  height: 406px;
+  background-color: #FFF;
+  float: right;
+  padding: 25px 40px 0 40px;
+}
+
+.main .login-zhu .login-d1 {
+  height: 30px;
+  border-bottom: 1px solid #CCC;
+}
+
+.main .login-zhu .login-d1 > h3 {
+  float: left;
+  cursor: pointer;
+}
+
+.main .login-zhu .login-d1 > h3 span {
+  border-right: 1px solid #CCC;
+  padding: 0 15px;
+}
+
+.main .login-zhu .login-d1 .d1-reng {
+  color: #E4393C;
+  font-size: 16px;
+}
+
+.main .login-zhu .login-d1 .d1-reng:hover {
+  text-decoration: underline;
+}
+
+.main .login-zhu .login-d1 .d1-disp {
+  color: #999999;
+  font-size: 16px;
+}
+
+.main .login-zhu .login-d1 .d1-disp:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.main .login-zhu .login-d1 > h4 {
+  cursor: pointer;
+  float: left;
+  padding: 0 15px;
+}
+
+.main .login-zhu .tologin {
+  padding-top: 18px;
+}
+
+.main .login-zhu .tologin div {
+  position: relative;
+}
+
+.main .login-zhu .tologin .tologin-d1 {
+  height: 62px;
+}
+
+.main .login-zhu .tologin .tologin-d1 em {
+  position: absolute;
+  height: 42px;
+  width: 45px;
+  border: 1px solid #CCC;
+  background: url("../img/register/regLogin-8.png") no-repeat;
+  background-position: -39px 10px;
+  background-color: #F3F3F3;
+}
+
+.main .login-zhu .tologin .tologin-d1 input[type="text"] {
+  width: 270px;
+  height: 42px;
+  border: 1px solid #CCCCCC;
+  color: #CCCCCC;
+  font-size: 16px;
+  padding-left: 54px;
+}
+
+.main .login-zhu .tologin .tologin-d2 {
+  height: 62px;
+}
+
+.main .login-zhu .tologin .tologin-d2 em {
+  position: absolute;
+  height: 42px;
+  width: 45px;
+  border: 1px solid #CCC;
+  background: url("../img/register/regLogin-8.png") no-repeat;
+  background-position: -70px 11px;
+  background-color: #F3F3F3;
+}
+
+.main .login-zhu .tologin .tologin-d2 input[type="password"] {
+  width: 270px;
+  height: 42px;
+  border: 1px solid #CCCCCC;
+  color: #CCCCCC;
+  font-size: 16px;
+  padding-left: 54px;
+}
+
+.main .login-zhu .tologin .tologin-d3 {
+  height: 62px;
+}
+
+.main .login-zhu .tologin .tologin-d3 em {
+  position: absolute;
+  height: 42px;
+  width: 45px;
+  border: 1px solid #CCC;
+  background: url("../img/register/regLogin-8.png") no-repeat;
+  background-position: -413px 11px;
+  background-color: #F3F3F3;
+}
+
+.main .login-zhu .tologin .tologin-d3 input[type="text"] {
+  width: 270px;
+  height: 42px;
+  border: 1px solid #CCCCCC;
+  color: #CCCCCC;
+  font-size: 16px;
+  padding-left: 54px;
+}
+
+.main .login-zhu .tologin .tologin-d4 input[type="button"] {
+  width: 270px;
+  height: 40px;
+  background-color: #E10303;
+  text-align: center;
+  line-height: 40px;
+  color: #FFF;
+  cursor: pointer;
+  letter-spacing: 5px;
+  font-size: 16px;
+}
+
+.main .login-zhu .tologin .tologin-d5 {
+  height: 42px;
+  padding-top: 14px;
+  border-bottom: 1px dashed #CCC;
+  font-size: 12px;
+}
+
+.main .login-zhu .tologin .tologin-d5 .d5-l {
+  color: #A1B3CE;
+}
+
+.main .login-zhu .tologin .tologin-d5 .d5-r a:nth-child(1) {
+  color: #A1B3CE;
+}
+
+.main .login-zhu .tologin .tologin-d5 .d5-r a:nth-child(2) {
+  color: blue;
+  padding-left: 10px;
+}
+
+.main .login-zhu .tologin .tologin-d6 {
+  font-size: 12px;
+  padding-top: 16px;
+}
+
+.main .login-zhu .tologin .tologin-d6 > span {
+  float: left;
+  padding-top: 5px;
+  padding-right: 15px;
+  color: #999;
+}
+
+.main .login-zhu .tologin .tologin-d6 > a {
+  background: url("../img/register/regLogin-8.png") no-repeat;
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin-right: 9px;
+}
+
+.main .login-zhu .tologin .tologin-d6 .d5-s1 {
+  background-position: 0 -35px;
+}
+
+.main .login-zhu .tologin .tologin-d6 .d5-s1:hover {
+  background-position: 0 -86px;
+}
+
+.main .login-zhu .tologin .tologin-d6 .d5-s2 {
+  background-position: -51px -35px;
+}
+
+.main .login-zhu .tologin .tologin-d6 .d5-s2:hover {
+  background-position: -51px -86px;
+}
+
+.main .login-zhu .tologin .tologin-d6 .d5-s3 {
+  background-position: -102px -35px;
+}
+
+.main .login-zhu .tologin .tologin-d6 .d5-s3:hover {
+  background-position: -102px -86px;
+}
+
+.main .login-zhu .tologin .tologin-d6 .d5-s4 {
+  background-position: -153px -35px;
+}
+
+.main .login-zhu .tologin .tologin-d6 .d5-s4:hover {
+  background-position: -153px -86px;
+}
+
+.main .login-zhu .tologin .tologin-d1 i, .main .login-zhu .tologin .tologin-d2 i, .main .login-zhu .tologin .tologin-d3 i {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.main .login-zhu .tologin .tologin-d1 i, .main .login-zhu .tologin .tologin-d2 i {
+  background: url("../img/register/regLogin-8.png") no-repeat 0 0;
+  background-position: -162px 0;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 14px;
+  right: 22px;
+  z-index: 4;
+  display: none;
+}
+
+.main .login-zhu .tologin .tologin-d1 span, .main .login-zhu .tologin .tologin-d2 span {
+  color: #FFF;
+  font-size: 12px;
+  height: 20px;
+  right: 0px;
+  background-color: #CCC;
+  padding: 0 5px;
+  position: absolute;
+  display: none;
+  bottom: 2px;
+}
+
+.main .login-zhu .tologin .tologin-d3 span {
+  color: #FFF;
+  font-size: 12px;
+  height: 20px;
+  right: 0px;
+  background-color: #CCC;
+  padding: 0 5px;
+  position: absolute;
+  display: none;
+  bottom: 2px;
+}
+
+.main .login-zhu .dmlogin {
+  padding-top: 18px;
+}
+
+.main .login-zhu .dmlogin > div {
+  position: relative;
+}
+
+.main .login-zhu .dmlogin .dmlogin-d1 {
+  height: 62px;
+}
+
+.main .login-zhu .dmlogin .dmlogin-d1 em {
+  position: absolute;
+  height: 42px;
+  width: 45px;
+  border: 1px solid #CCC;
+  background: url("../img/register/regLogin-8.png") no-repeat;
+  background-position: -39px 10px;
+  background-color: #F3F3F3;
+}
+
+.main .login-zhu .dmlogin .dmlogin-d1 input[type="text"] {
+  width: 270px;
+  height: 42px;
+  border: 1px solid #CCCCCC;
+  color: #CCCCCC;
+  font-size: 16px;
+  padding-left: 54px;
+}
+
+.main .login-zhu .dmlogin .dmlogin-d2 {
+  height: 62px;
+}
+
+.main .login-zhu .dmlogin .dmlogin-d2 em {
+  position: absolute;
+  height: 42px;
+  width: 45px;
+  border: 1px solid #CCC;
+  background: url("../img/register/regLogin-8.png") no-repeat;
+  background-position: -413px 11px;
+  background-color: #F3F3F3;
+}
+
+.main .login-zhu .dmlogin .dmlogin-d2 input[type="password"] {
+  width: 270px;
+  height: 42px;
+  border: 1px solid #CCCCCC;
+  color: #CCCCCC;
+  font-size: 16px;
+  padding-left: 54px;
+}
+
+.main .login-zhu .dmlogin .dmlogin-d3 {
+  height: 62px;
+}
+
+.main .login-zhu .dmlogin .dmlogin-d3 em {
+  position: absolute;
+  height: 42px;
+  width: 45px;
+  border: 1px solid #CCC;
+  background: url("../img/register/regLogin-8.png") no-repeat;
+  background-position: -252px 11px;
+  background-color: #F3F3F3;
+}
+
+.main .login-zhu .dmlogin .dmlogin-d3 input[type="text"] {
+  width: 150px;
+  height: 42px;
+  border: 1px solid #CCCCCC;
+  color: #CCCCCC;
+  font-size: 16px;
+  padding-left: 54px;
+}
+
+.main .login-zhu .dmlogin .dmlogin-d3 button {
+  width: 115px;
+  height: 41px;
+  line-height: 41px;
+  font-size: 12px;
+  color: #666666;
+  text-align: center;
+  border: 1px solid #CCC;
+  background-color: #EAEAEA;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main .login-zhu .dmlogin .dmlogin-d4 input[type="button"] {
+  width: 270px;
+  height: 40px;
+  background-color: #E10303;
+  text-align: center;
+  line-height: 40px;
+  color: #FFF;
+  cursor: pointer;
+  letter-spacing: 5px;
+  font-size: 16px;
+}
+
+.main .login-zhu .dmlogin .dmlogin-d5 {
+  font-size: 12px;
+  padding-top: 16px;
+  margin-top: 42px;
+  border-top: 1px dashed #CCC;
+}
+
+.main .login-zhu .dmlogin .dmlogin-d5 > span {
+  float: left;
+  padding-top: 5px;
+  padding-right: 15px;
+  color: #999;
+}
+
+.main .login-zhu .dmlogin .dmlogin-d5 > a {
+  background: url("../img/register/regLogin-8.png") no-repeat;
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin-right: 9px;
+}
+
+.main .login-zhu .dmlogin .dmlogin-d5 .d5-s1 {
+  background-position: 0 -35px;
+}
+
+.main .login-zhu .dmlogin .dmlogin-d5 .d5-s1:hover {
+  background-position: 0 -86px;
+}
+
+.main .login-zhu .dmlogin .dmlogin-d5 .d5-s2 {
+  background-position: -51px -35px;
+}
+
+.main .login-zhu .dmlogin .dmlogin-d5 .d5-s2:hover {
+  background-position: -51px -86px;
+}
+
+.main .login-zhu .dmlogin .dmlogin-d5 .d5-s3 {
+  background-position: -102px -35px;
+}
+
+.main .login-zhu .dmlogin .dmlogin-d5 .d5-s3:hover {
+  background-position: -102px -86px;
+}
+
+.main .login-zhu .dmlogin .dmlogin-d5 .d5-s4 {
+  background-position: -153px -35px;
+}
+
+.main .login-zhu .dmlogin .dmlogin-d5 .d5-s4:hover {
+  background-position: -153px -86px;
+}
+
+.center {
+  padding: 10px 20px;
+  background-color: black;
+  text-align: center;
+  color: #FFF;
+  position: absolute;
+  display: none;
+}
+
+/*footer区域*/
+.footer {
+  padding: 68px 0;
+}
+
+.footer .foter-d1 {
+  text-align: center;
+  font-size: 12px;
+}
+
+.footer .foter-d1 span {
+  color: #666666;
+  padding: 0 4px;
+}
+
+.footer .foter-d2 {
+  text-align: center;
+  font-size: 12px;
+  padding-top: 18px;
+  color: #E10303;
+}

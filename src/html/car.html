@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=., initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../lib/require.js" data-main="../js/carmo"></script>
+    <link rel="shortcut icon" href="http://www.jiuxian.com/favicon.ico" mce_href="http://www.jiuxian.com/favicon.ico" type="image/x-icon" >
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/car.css">
+    
+    
+    
+    <title>购物车</title>
+</head>
+<body>
+    <!-- 头部：登录状态+广告+logo、搜索框 -->
+    <header class="header clearfix" name="top" id="header">
+        <!-- 登录状态 -->
+        <div class="h-back">
+            <div class="container h-top">
+                <article class="fl top-l">
+                    <div class="top-d1Top">
+                        <span>欢迎来酒仙网!</span>
+                        <a href="login.html">请登录</a>
+                        <a href="register.html">免费注册</a>
+                    </div>
+                    <div class="top-d2Top" style="display:none;">
+                        
+                    </div>
+                </article>
+                <article class="fr top-r">
+                    <ul>
+                        <li class="r-1"><a href="#">我的酒仙<s class="r-1-s"></s></a>
+                            <div class="r-1-d">
+                                <a href="#">我的订单</a>
+                                <a href="#">物流跟踪</a>
+                                <a href="#">我的优惠券</a>
+                            </div>
+                        </li>
+                        <li class="r-2"><a href="#">CEO邮箱</a></li>
+                        <li class="r-3"><a href="#"><i></i>购物车<span>7</span>件</a></li>
+                        <li class="r-4"><a href="#">CLUB会员</a></li>
+                        <li class="r-5"><a href="#">招商入驻</a></li>
+                        <li class="r-6"><a href="#"><i></i>手机逛酒仙</a>
+                            <div class="r-6-d">
+                                <img src="../img/index/jxPho-code.jpg" alt="酒仙网">
+                            </div>
+                        </li>
+                        <li class="r-7"><a href="#"><i></i>网站导航<s class="r-1-s"></s></a>
+                            <div class="r-7-d">
+                                <div class="r7-d1">
+                                    <p>购物</p>
+                                    <div class="r7-d1-d1">
+                                        <a href="#">白酒</a>
+                                        <a href="#">葡萄酒</a>
+                                        <a href="#">洋酒</a>
+                                        <a href="#">啤酒</a>
+                                        <a href="#">保健酒</a>
+                                        <a href="#">黄酒</a>
+                                    </div>
+                                </div>
+                                <div class="r7-d2">
+                                    <p>活动</p>
+                                    <div class="r7-d1-d1">
+                                        <a href="#">愚酒相约</a>
+                                        <a href="#">进口馆</a>
+                                        <a href="#">酒鬼酒</a>
+                                        <a href="#">老酒特卖</a>
+                                        <a href="#">新品发现</a>
+                                        <a href="#">值得买</a>
+                                    </div>
+                                </div>
+                                <div class="r7-d3">
+                                    <p>其他</p>
+                                    <div class="r7-d1-d1">
+                                        <a href="#">会员中心</a>
+                                        <a href="#">社区</a>
+                                        <a href="#">常见问题</a>
+                                        <a href="#">招商入驻</a>
+                                        <a href="#">酒类咨询</a>
+                                        <a href="#">VIP注册</a>
+                                    </div>
+                                </div>
+                                <div class="r7-d4">
+                                    咨询热线：400-617-9999
+                                </div>
+                            </div>
+                        </li>
+                        <li class="r-8"><a href="#"><i></i>客户服务<s class="r-1-s"></s></a>
+                            <div class="r-8-d">
+                                <a href="#">常见问题</a>
+                                <a href="#">配送说明</a>
+                                <a href="#">售后服务</a>
+                            </div>
+                        </li>
+                        <li class="r-9">客服热线 <span>400-617-9999</span></li>
+                    </ul>  
+                </article>
+            </div>
+        </div>
+         
+        <!-- 广告 -->
+        <div class="midHeader">
+            <div class="midHeaderBox">
+                <div class="jxwLogo">
+                    <p style="background:url(http://img06.jiuxian.com/bill/2014/1226/a347f6723d3141fd9b9b9d464eff6fc7.png) no-repeat;" class="jxwIndex">
+                        <a href="../index.html"></a>
+                    </p>
+                </div>
+                <div class="bayProcess">
+                    <div class="proPic"></div>
+                    <div class="proTex"><span class="on">我的购物车</span><span class="on2">确认订单信息</span><span class="on3">成功提交订单</span></div>
+                </div>
+            </div>
+        </div>
+           
+    </header>
+    <main class="clearfix">
+        <div class="cartMain">
+            <div id="cart_container">
+                <div class="f-Prompt">
+                    <i class="cartIcon"></i>
+                    <span>温馨提示：自营商品实付满100元免运费，偏远地区满500免运费</span>
+                </div>
+                <div class="cart-t">
+                
+                <div class="cart-thead">
+                    <div class="cTab-tr cart-checkbox">    	
+                        <label class="check-all checkbox-checked ">
+                            <i class="cartIcon"></i>
+                            <input name="" type="checkbox" value="">
+                        </label>
+                        <span class="checkAllText">全选</span>
+                    </div>
+                    <div class="cTab-tr cart-goods">商品信息</div>
+                    <div class="cTab-tr cart-price">单价</div>
+                    <div class="cTab-tr cart-gold">送金币</div>
+                    <div class="cTab-tr cart-quantity">数量</div>
+                    <div class="cTab-tr cart-subtotal">小计</div>
+                    <div class="cTab-tr cart-operating">操作</div>
+                </div>
+
+                <!-- 页面数据渲染区域 -->
+                <div id="shuh">
+                    
+                </div>
+                
+                <!-- ------------ -->
+                </div>
+                <div class="cart-gopay-bottom">
+                    <div class="cart-gopay-left">
+                        <label class="check-all checkbox-checked "><i class="cartIcon "></i><input name="" type="checkbox" value=""><span class="checkAllText">全选</span></label>            
+                        <a href="javascript:;" id="delChecked">删除选中商品</a>
+                        <a href="javascript:;" id="delFail">清除失效商品</a>
+                        <a href="javascript:;" id="delToCollect">移入我的收藏</a>
+                    </div>
+                    <div class="cart-count">
+                        <div class="cart-count-total"><span class="pieces">已选商品<em>1</em>件</span><span class="total">总价（不含运费）：<em></em></span></div>
+                        <div class="cart-count-offer"><span>活动优惠：<em>￥0.00</em></span><span>赠送金币：<em>349</em>个</span></div>
+                    </div>
+                    <div class="cart-gopay-btn"><a href="javascript:;" class="done" style="display:inherit">去结算</a><a href="javascript:;" class="done">提交中...</a></div>
+                </div>
+                <div class="cart-confirm-bg cart-confirm-deliver">
+                <input type="hidden" id="noStockGiftsIds" value="">
+                <div class="cart-confirm">
+                    <div class="cart-confirm-tit">
+                        <div class="deliver-text">
+                            <i class="cartIcon"></i>
+                            <p></p>
+                        </div>
+                        <i class="cartIcon cart-close"></i>
+                    </div>
+                    <div class="cart-confirm-body">
+                        <div class="cart-confirm-scroll">
+                            <div class="cart-confirm-item">
+                                <div class="cart-confirm-vice">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-confirm-Btn">
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    <footer class="clearfix footer">
+        <div class="footerTopBox">
+            <div class="TopBox container">
+                <div class="TopBox-d1 clearfix">
+                    <div class="TopBox-dLeft">
+                        <span></span>
+                        <h2>400-617-9999</h2>
+                        <p>客服热线 9:00-23:00 贴心服务</p>
+                    </div>
+                    <div class="TopBox-dRight">
+                        <b>优惠促销早知道</b>
+                        <input type="text" placeholder="请输入您的邮箱地址"><button></button>
+                    </div>
+                </div>
+                <div class="TopBox-d2">
+                    <ul>
+                        <li>
+                            <h3><i></i>新手入门</h3>
+                            <p><a href="">购物保障</a></p>
+                            <p><a href="">服务协议</a></p>
+                            <p><a href="">发票说明</a></p>
+                        </li>
+                        <li>
+                            <h3><i></i>常见问题</h3>
+                            <p><a href="">红包使用</a></p>
+                            <p><a href="">返现使用</a></p>
+                            <p><a href="">兑换码</a></p>
+                        </li>
+                        <li>
+                            <h3><i></i>配送说明</h3>
+                            <p><a href="">配送时间</a></p>
+                            <p><a href="">配送费用</a></p>
+                            <p><a href="">配送范围</a></p>
+                        </li>
+                        <li>
+                            <h3><i></i>支付方式</h3>
+                            <p><a href="">货到付款</a></p>
+                            <p><a href="">在线支付</a></p>
+                            <p><a href="">线下支付</a></p>
+                        </li>
+                        <li>
+                            <h3><i></i>售后服务</h3>
+                            <p><a href="">品质保证</a></p>
+                            <p><a href="">退换货政策</a></p>
+                            <p><a href="">退换货流程</a></p>
+                        </li>
+                        <li>
+                            <h3><i></i>特色服务</h3>
+                            <p><a href="">会员俱乐部</a></p>
+                            <p><a href="">企业客户</a></p>
+                            <p><a href="">酒仙社区</a></p>
+                        </li>
+                        <li>
+                            <h3><i></i>酒仙新浪微博</h3>
+                            <h4><i></i>酒仙微博</h4>
+                            <b></b>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footerBotBox">
+            <div class="BotBox container">
+                <div class="BotBox-d1">
+                    <ul class="u1">
+                        <li><a href="#"><span>公司简介</span></a></li>
+                        <li><a href="#"><span>管理团队</span></a></li>
+                        <li><a href="#"><span>媒体报道</span></a></li>
+                        <li><a href="#"><span>联系我们</span></a></li>
+                        <li><a href="#"><span>友情链接</span></a></li>
+                        <li><a href="#"><span>网站地图</span></a></li>
+                        <li><a href="#"><span style="border: none;">品牌大全</span></a></li>
+                    </ul>
+                    <p>北京酒仙网络科技有限公司  ©  酒仙网   2011  jiuxian.com  All   Rights Reserved   <a href="http://www.miibeian.gov.cn/">京ICP备17043395号</a>京公网安备1101050188221</p>
+                    <ul class="u2">
+                        <li><a href="#"><span>酒仙网白酒</span></a></li>
+                        <li><a href="#"><span>酒仙网葡萄酒</span></a></li>
+                        <li><a href="#"><span>开放平台招商</span></a></li>
+                        <li><a href="#"><span>酒仙网团购</span></a></li>
+                        <li><a href="#"><span style="border: none;">更多</span></a></li>
+                    </ul>
+                    <p>统一社会信用代码  91110302306646672B   食品流通许可证编号  JY11131010328793   </p>
+                    <p>地址：北京市北京经济技术开发区经海五路58号院8幢4层</p>
+                    <p class="p4">
+                        <a href="#">
+                            <img src="../img/index/cnnic.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="../img/index/copyBot03.jpg" alt="">
+                        </a>
+                    </p>
+                    <p class="p5">购买前请确认达到法定饮酒年龄！酒仙网不销售任何含酒精产品给18岁以下人士！</p>
+                </div>
+                <div class="BotBox-d2">
+                    <div class="BotBox-d2-s1">
+                        <img src="../img/index/jxPho-code.jpg" alt="">
+                        <p>手机酒仙网</p>
+                    </div>
+                    <div class="BotBox-d2-s2">
+                        <img src="../img/index/jx-wxgzh.png" alt="">
+                        <p>微信公众号</p>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

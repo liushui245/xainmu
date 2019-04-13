@@ -1,0 +1,15 @@
+ /*插件样式：千万不要写重置样式*/
+.Dosilde img{display: block;}
+.Dosilde{position:relative;overflow:hidden;}
+.Dosilde ul{position:absolute;overflow:hidden;list-style: none;padding:0;margin:0;}
+.Dosilde .level li{float:left;}
+.Dosilde .faded li{position:absolute;left: 0;top: 0;}
+
+.Dosilde .Dopage{position:absolute;right:0;bottom:0;padding:10px;z-index: 2000;}
+.Dosilde .Dopage span{display:inline-block;margin:0 5px;width:10px;height:10px;line-height:10px;background-color:rgba(255, 193, 7, 0.33);text-align:center;color: transparent;border-radius: 50%;cursor: pointer;}
+.Dosilde .Dopage span.active{background-color: rgba(255,0,0,.8);}
+.Dosilde .Donext{position:absolute;z-index: 1000;width: 100%;height:100%;}
+.Dosilde .Donext .Donexts{height: 50px;font-size: 30px;background-color: #dccdcd59;width: 50px;position: absolute;line-height: 50px;text-align: center;right: 0;}
+.Dosilde .Donext .Doprve{height: 50px;font-size: 30px;background-color: #dccdcd59;width: 50px;position: absolute;line-height: 50px;text-align: center;}
+
+
